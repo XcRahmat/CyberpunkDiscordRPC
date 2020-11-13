@@ -19,7 +19,7 @@ while True:
         activity_input = int(input("\n>>> "))
         activity = activity_list[activity_input - 1]
         break
-    except ValueError and IndexError:
+    except ValueError or IndexError:
         print("Enter a valid number")
 
 timestamp = int(time())
